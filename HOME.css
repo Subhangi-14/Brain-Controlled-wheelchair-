@@ -1,0 +1,214 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    color: #1a1a1a;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar jekhane logo ache */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    animation: slideDown 0.6s ease-out;
+  }
+  
+  .logo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    background: linear-gradient(to right, #00bcd4, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00e5ff;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #00e5ff;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(120deg, #e0f7fa, #ffffff);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #00bcd4, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .cta-button {
+    background: linear-gradient(to right, #00bcd4, #00e5ff);
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,188,212,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0,188,212,0.5);
+  }
+  
+  .hero-img img {
+    max-width: 500px;
+    width: 100%;
+    animation: floatImage 4s ease-in-out infinite;
+  }
+  
+  /* Video  */
+  .video-showcase {
+    background: linear-gradient(145deg, #f4f7fa, #e2ecf3);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #d0dce7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-showcase h2 {
+    font-size: 2.2em;
+    margin-bottom: 12px;
+    color: #1e3a5f;
+    font-weight: 600;
+}
+
+.video-showcase p {
+    font-size: 1.1em;
+    margin-bottom: 32px;
+    color: #455a75;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.video-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+  
+  /* Footer design */
+  footer {
+    background: #121212;
+    color: #ccc;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+  }
+  
+  /* making imaage annimative*/
+  @keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes floatImage {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Responsiveness with the image part */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-img {
+      margin-top: 2rem;
+      height: 60vh; 
+      width: 200%;   
+      object-fit: cover; 
+    }
+    
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+  }
+  

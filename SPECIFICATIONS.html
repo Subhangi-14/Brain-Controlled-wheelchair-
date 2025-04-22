@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain-Controlled Wheelchair Specifications</title>
+    <link rel="stylesheet" href="SPECIFICATIONS.css" />
+</head>
+<body>
+    <header>
+        <h1>Brain-Controlled Wheelchair</h1>
+        <p class="subtitle">Advanced Mobility Solutions for People with Severe Motor Impairments</p>
+        <div class="header-buttons">
+            <a href="HOME.html" class="nav-button">← Home</a>
+            <a href="BUY NOW.html" class="nav-button">📄 Specifications</a>
+        </div>
+    </header>   
+    
+    <!-- project details part ta -->
+    <div class="container">
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>This revolutionary brain-controlled wheelchair system uses electroencephalography (EEG) sensors to interpret brain signals and convert them into wheelchair movement commands. An IR sensor is incorporated for movement by blink detection, ensuring safe navigation in real-world environments. Additionally, a gyroscope helps track head or body orientation to assist in determining direction and stability, enabling more precise control during movement.The system is designed to provide mobility independence for individuals with severe motor impairments who cannot operate traditional wheelchair controls.</p>
+            <p>Together, these components create a powerful assistive device that offers freedom and independence through a fusion of neuroscience and smart technology.
+
+            </p>
+        </section>
+  
+        <!-- selecting sensor /motor/battery -->
+        <div class="tab-container">
+            <ul class="tabs">
+                <li class="active" data-tab="sensors">Sensors</li>
+                <li data-tab="motors">Motors</li>
+                <li data-tab="controllers">Controllers</li>
+                <li data-tab="battery">Battery & Power</li>
+            </ul>
+            
+            <!-- Sensors Tab -->
+            <div id="sensors" class="tab-content active">
+                <h2>Sensors</h2>
+                <div class="component-grid">
+                    <!-- EEG Sensor -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="eeg.jpg" alt="EEG Sensor Array">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">EEG Sensor </h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>NeuroSky MindWave</span></li>
+                                <li><span>Channels</span> <span>16 dry electrodes</span></li>
+                                <li><span>Sampling Rate</span> <span>512 Hz</span></li>
+                                <li><span>Usage</span> <span>Brain waves detection </span></li>
+                            </ul>
+                            <div class="price-tag">₹10,000-₹12,000</div>
+                            <button class="compare-btn" data-component="eeg">KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- IR Sensor -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="IR.jpeg" alt="IR Sensor">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">IR SENSOR</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span> HW 201 IR</span></li>
+                                <li><span>Range</span> <span>10-80cm</span></li>
+                                <li><span>Response Time</span> <span>38ms</span></li>
+                                <li><span>Usage</span> <span>Eye blink detection</span></li>
+                            </ul>
+                            <div class="price-tag">₹370-₹460 </div>
+                            <button class="compare-btn" data-component="IR">KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- ACCELEROMETER+GYROSCOPE -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="MPU 6050.jpeg" alt="Proximity Sensor">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">ACCELEROMETER + GYROSCOPE</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>MPU - 6050</span></li>
+                                <li><span>Range</span> <span>3axis + 3 axis</span></li>
+                                <li><span>Resolution</span> <span>16 bit</span></li>
+                                <li><span>Usage</span> <span>Head tilt detection</span></li>
+                            </ul>
+                            <div class="price-tag">₹460-₹500each</div>
+                            <button class="compare-btn" data-component="proximity">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motors Tab -->
+            <div id="motors" class="tab-content">
+                <h2>Motors</h2>
+                <div class="component-grid">
+                    <!-- servo motor -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="servo.jpeg" alt="Drive Motor">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">SERVO MOTOR</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>MotiPower MD-235</span></li>
+                                <li><span>Type</span> <span>Brushless DC</span></li>
+                                <li><span>Power</span> <span>350W each</span></li>
+                                <li><span>Voltage</span> <span>24V</span></li>
+                                <li><span>Max Torque</span> <span>12 N·m</span></li>
+                            </ul>
+                            <div class="price-tag">>₹250-₹300 each</div>
+                            <button class="compare-btn" data-component="drive-motor">KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- DC Motors -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="dc motor.jpeg" alt="Steering Motor">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">Steering Motors</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>ServoTech ST-120</span></li>
+                                <li><span>Type</span> <span>Servo Motor</span></li>
+                                <li><span>Rotation</span> <span>180°</span></li>
+                                <li><span>Voltage</span> <span>12V</span></li>
+                                <li><span>Stall Torque</span> <span>15 kg·cm</span></li>
+                            </ul>
+                            <div class="price-tag">₹25-₹50 each</div>
+                            <button class="compare-btn" data-component="steering-motor">Compare Options</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    
+
+            <!-- Controllers Tab -->
+            <div id="controllers" class="tab-content">
+                <h2>Controllers</h2>
+                <div class="component-grid">
+                    <!-- ARDUINO  PROCESSOR -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="ARDUINO.jpg" alt="Main Controller">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">ARDUINO UNO</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>Arduino Uno Rev3/span></li>
+                                <li><span>Processor</span> <span>8-bit AVR RISC CPU</span></li>
+                                <li><span>RAM</span> <span>8GB LPDDR4X</span></li>
+                                <li><span>Storage</span> <span>32 KB</span></li>
+                            </ul>
+                            <div class="price-tag">₹650-₹700each</div>
+                            <button class="compare-btn" data-component="main-controller">KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- MOTOR DRIVER -->
+                    <div class="component-card">
+                        <div class="component-image">
+                            <img src="MOTOR DRIVER.jpg" alt="Motor Controller">
+                        </div>
+                        <div class="component-details">
+                            <h3 class="component-title">Motor Controllers</h3>
+                            <ul class="spec-list">
+                                <li><span>Model</span> <span>L298N Dual H bridge</span></li>
+                                <li><span>Number of Channel</span> <span>2</span></li>
+                                <li><span>Operating Voltage</span> <span>5V-35V</span></li>
+                                <li><span>Dimension</span> <span>43mm x 43mm x 27mm</span></li>
+                            </ul>
+                            <div class="price-tag">₹160 each</div>
+                            <button class="compare-btn" data-component="motor-controller">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Battery Tab -->
+<div id="battery" class="tab-content">
+    <h2>Battery & Power Systems</h2>
+    <div class="component-grid">
+      <!-- Battery components -->
+      <div class="component-item">
+        <label for="batteryType">Battery Type:</label>
+        <select id="batteryType" name="batteryType">
+          <option value="lithium">Lithium</option>
+          <option value="lead-acid">Lead Acid</option>
+          <option value="nickel-cadmium">Nickel-Cadmium</option>
+        </select>
+      </div>
+      <div class="component-item">
+        <label for="batteryCapacity">Capacity (Ah):</label>
+        <input type="number" id="batteryCapacity" name="batteryCapacity" min="1" value="10">
+      </div>
+      <div class="component-item">
+        <label for="batteryVoltage">Voltage (V):</label>
+        <input type="number" id="batteryVoltage" name="batteryVoltage" min="1" value="12">
+      </div>
+      <div class="component-item">
+        <button id="compareButton">Compare Options</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for comparing options -->
+  <div id="compareModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="compareTitle">Component Comparison</h2>
+      <div id="compareContent">
+      </div>
+    </div>
+  </div>
+  
+
+    <!--  Fixed Footer -->
+    <footer>
+        <p>Neon Sparks © 2025 | Specifications subject to change</p>
+        <p>Last Updated: April 12, 2025</p>
+    </footer>
+    <script src="SPECIFICATIONS.js"></script>
+</body>
+</html>
